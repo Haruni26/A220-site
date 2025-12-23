@@ -13,7 +13,7 @@ export default function HeroVideo() {
         playsInline
         className="absolute inset-0 h-full w-full object-cover"
       >
-        <source src="public/video/airbusVideo.mp4" type="video/mp4" />
+        <source src="/video/airbusVideo.mp4" type="video/mp4" />
       </video>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50" />
