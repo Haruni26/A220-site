@@ -25,7 +25,7 @@ export default function HeroVideo() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-6xl font-bold tracking-wide text-left">
+          <h1 className="text-7xl font-bold tracking-wide text-left">
             The A220
           </h1>
           <p className="mt-4 text-xl opacity-90 text-left">
