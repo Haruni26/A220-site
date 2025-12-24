@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <>
       <HeroVideo />
-      <InfiniteSlider className="p-5">
+      <InfiniteSlider gap={130} speed={40} className="p-5 bg-white relative">
         <Image
           src="/images/ab-logo.png"
           alt="Air Baltic Logo"
-          width={50}
-          height={150}
+          width={100}
+          height={100}
           priority
         />
         <Image
@@ -26,7 +26,7 @@ export default function Home() {
         <Image
           src="/images/af-logo.png"
           alt="Air France Logo"
-          width={100}
+          width={200}
           height={150}
           priority
         />
