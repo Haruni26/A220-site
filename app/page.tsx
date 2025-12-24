@@ -12,44 +12,44 @@ export default function Home() {
         <Image
           src="/images/ab-logo.png"
           alt="Air Baltic Logo"
-          width={100}
+          width={50}
           height={150}
-          className="rounded-xl object-cover"
+          priority
         />
         <Image
           src="/images/ac-logo.png"
           alt="Air Canada Logo"
           width={100}
           height={150}
-          className="rounded-xl object-cover"
+          priority
         />
         <Image
           src="/images/af-logo.png"
           alt="Air France Logo"
           width={100}
           height={150}
-          className="rounded-xl object-cover"
+          priority
         />
         <Image
           src="/images/breeze-logo.png"
           alt="Breeze Air Logo"
           width={100}
           height={150}
-          className="rounded-xl object-cover"
+          priority
         />
         <Image
           src="/images/delta-logo.png"
           alt="Delta Airways Logo"
           width={100}
           height={150}
-          className="rounded-xl object-cover"
+          priority
         />
         <Image
           src="/images/jb-logo.png"
           alt="Jetblue Logo"
           width={100}
           height={150}
-          className="rounded-xl object-cover"
+          priority
         />
       </InfiniteSlider>
       <div>
