@@ -8,53 +8,41 @@ export default function Home() {
   return (
     <>
       <HeroVideo />
-      <InfiniteSlider gap={130} speed={40} className="p-5 bg-white relative">
-        <Image
-          src="/images/ab-logo.png"
-          alt="Air Baltic Logo"
-          width={100}
-          height={100}
-          priority
-        />
-        <Image
-          src="/images/ac-logo.png"
-          alt="Air Canada Logo"
-          width={100}
-          height={150}
-          priority
-        />
-        <Image
-          src="/images/af-logo.png"
-          alt="Air France Logo"
-          width={200}
-          height={150}
-          priority
-        />
-        <Image
-          src="/images/breeze-logo.png"
-          alt="Breeze Air Logo"
-          width={100}
-          height={150}
-          priority
-        />
-        <Image
-          src="/images/delta-logo.png"
-          alt="Delta Airways Logo"
-          width={100}
-          height={150}
-          priority
-        />
-        <Image
-          src="/images/jb-logo.png"
-          alt="Jetblue Logo"
-          width={100}
-          height={150}
-          priority
-        />
-      </InfiniteSlider>
-      <div>
-        <h1 className="p-6 text-2xl">Here&apos;s a deeper dive</h1>
-      </div>
+
+      <section className="bg-black py-10">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl text-white mb-6">Our Proud Operators</h2>
+
+          <div className="rounded-2xl bg-white shadow-xl p-4">
+            <InfiniteSlider gap={80} speed={35} className="py-4">
+              {[
+                { src: "/images/ab-logo.png", alt: "Air Baltic" },
+                { src: "/images/ac-logo.png", alt: "Air Canada" },
+                { src: "/images/af-logo.png", alt: "Air France" },
+                { src: "/images/breeze-logo.png", alt: "Breeze Airways" },
+                { src: "/images/delta-logo.png", alt: "Delta Air Lines" },
+                { src: "/images/jb-logo.png", alt: "JetBlue" },
+              ].map((logo) => (
+                <div
+                  key={logo.alt}
+                  className="relative h-16 w-40 flex items-center justify-center"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+              ))}
+            </InfiniteSlider>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="p-5 text-2xl">Let&apos;s take a deeper dive</h1>
+        </div>
+      </section>
     </>
   );
 }
