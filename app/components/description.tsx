@@ -63,18 +63,17 @@ export default function description() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Image
-            src="/images/a220-blueprint.png"
+            src="/images/a220-100-blueprint.png"
             width={800}
             height={600}
             alt="A220 Blueprint Illustration"
             className="rounded-2xl shadow-lg object-contain"
           />
-
           <Image
-            src="/images/a220-engine.jpg"
+            src="/images/a220-300-blueprint.png"
             width={800}
             height={600}
-            alt="A220 Engine"
+            alt="A220 Blueprint Illustration"
             className="rounded-2xl shadow-lg object-contain"
           />
         </div>
