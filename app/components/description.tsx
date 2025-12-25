@@ -17,7 +17,7 @@ export default function description() {
           {/* LEFT SIDE */}
           <div>
             <p className="uppercase tracking-wider text-sm">
-              Here&apos;s a Deeper Dive
+              Here&apos;s the deal
             </p>
 
             <h2 className="mt-3 text-5xl md:text-6xl font-bold leading-tight text-[#4b8ae1]">
@@ -88,8 +88,36 @@ export default function description() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-12"
         >
+          {/* LEFT SIDE */}
+          <div>
+            <p className="uppercase tracking-wider text-sm">
+              Let&apos;s take a deeper dive
+            </p>
+
+            <h2 className="mt-3 text-5xl md:text-6xl font-bold leading-tight text-[#4b8ae1]">
+              From a
+              <br />
+              Stark
+              <br />
+              Beginning.
+            </h2>
+
+            <div className="mt-6 h-2 w-12 bg-[#4b8ae1] rounded" />
+          </div>
           {/* RIGHT SIDE */}
           <div className="space-y-6 text-lg leading-relaxed">
+            <div className="max-w-6xl mx-auto px-6 py-16">
+              <Image
+                src="/images/c-series.png"
+                width={500}
+                height={600}
+                alt="C-100 Taking Off"
+                className="rounded-2xl shadow-lg object-contain"
+              />
+            </div>
+          </div>
+
+          <div>
             <p>
               Built for the <strong>100-160 seat</strong> aircraft category, the
               A220 Family offers a{" "}
@@ -112,23 +140,6 @@ export default function description() {
               <strong>unmatched operational flexibility</strong>, making it a
               favourite among airlines and a standout choice for passengers.
             </p>
-          </div>
-
-          {/* LEFT SIDE */}
-          <div>
-            <p className="uppercase tracking-wider text-sm">
-              Here&apos;s a Deeper Dive
-            </p>
-
-            <h2 className="mt-3 text-5xl md:text-6xl font-bold leading-tight text-[#4b8ae1]">
-              Engineered for
-              <br />
-              performance
-              <br />
-              and comfort.
-            </h2>
-
-            <div className="mt-6 h-2 w-12 bg-[#4b8ae1] rounded" />
           </div>
         </motion.div>
       </section>
