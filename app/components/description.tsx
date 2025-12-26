@@ -77,9 +77,8 @@ export default function description() {
             <h2 className="mt-3 text-5xl md:text-6xl font-bold leading-tight text-white">
               From the
               <br />
-              Great{" "}
-              <span className="bg-linear-to-r from-white to-red-500 bg-clip-text text-transparent">
-                White
+              <span className="bg-linear-to-br from-white to-red-500 bg-clip-text text-transparent">
+                Great White
               </span>
               <br />
               <span className="text-red-500">North</span>

@@ -4,6 +4,7 @@ import HeroVideo from "./components/heroVideo";
 import { InfiniteSlider } from "./components/motion-primitives/infinite-slider";
 import Image from "next/image";
 import Description from "./components/description";
+import Gallery from "./components/gallery";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
         </div>
 
         <Description />
+        <Gallery />
       </section>
     </>
   );
