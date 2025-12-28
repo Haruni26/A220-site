@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function description() {
   return (
     <>
-      <section className="py-24">
+      <section className="py-24" id="about">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function description() {
         >
           {/* LEFT SIDE */}
           <div>
-            <p className="uppercase tracking-wider text-sm" id="about">
+            <p className="uppercase tracking-wider text-sm">
               Here&apos;s the deal
             </p>
 
@@ -34,33 +34,52 @@ export default function description() {
           {/* RIGHT SIDE */}
           <div className="space-y-6 text-lg leading-relaxed">
             <p>
-              Built for the <strong>100-160 seat</strong> aircraft category, the
-              A220 Family offers a{" "}
-              <strong>latest-generation design, advanced materials</strong>, and
-              Airbus&apos; signature <strong>passenger-first approach</strong>.
+              Built for the{" "}
+              <strong className="text-[#4b8ae1]">100-160 seat</strong> aircraft
+              category, the A220 Family offers a{" "}
+              <strong className="text-[#4b8ae1]">
+                latest-generation design, advanced materials
+              </strong>
+              , and Airbus&apos; signature{" "}
+              <strong className="text-[#4b8ae1]">
+                passenger-first approach
+              </strong>
+              .
             </p>
 
             <p>
-              With panoramic windows, the widest single-aisle cabin and seats in
-              its class, it combines big jet comfort with small jet efficiency.
-              Offering <strong>25% reduction in CO₂ emissions per seat</strong>{" "}
-              and a <strong>50% smaller noise footprint</strong> than previous
-              generation aircraft, the A220 brings a{" "}
-              <strong>quieter and roomier way to fly</strong>.
+              Panoramic windows, the widest single-aisle cabin and seats in its
+              class. The A220 combines big jet comfort with small jet
+              efficiency. Offering{" "}
+              <strong className="text-[#4b8ae1]">
+                25% reduction in CO₂ emissions per seat
+              </strong>{" "}
+              and a{" "}
+              <strong className="text-[#4b8ae1]">
+                50% smaller noise footprint
+              </strong>{" "}
+              than previous generation aircraft, the A220 brings a{" "}
+              <strong className="text-[#4b8ae1]">
+                quieter and roomier way to fly
+              </strong>
+              .
             </p>
 
             <p>
-              Whether taking a short hop, long regional route, or international
-              flight, the A220 delivers{" "}
-              <strong>unmatched operational flexibility</strong>, making it a
-              favourite among airlines and a standout choice for passengers.
+              Short trips, long regional route, or international flight, the
+              A220 delivers{" "}
+              <strong className="text-[#4b8ae1]">
+                unmatched operational flexibility
+              </strong>
+              , making it a favourite among airlines and a standout choice for
+              passengers.
             </p>
           </div>
         </motion.div>
       </section>
 
       {/* ---- SECOND SECTION ---- */}
-      <section className="py-24">
+      <section className="py-24" id="history">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +89,7 @@ export default function description() {
         >
           {/* LEFT SIDE */}
           <div>
-            <p className="uppercase tracking-wider text-sm" id="history">
+            <p className="uppercase tracking-wider text-sm">
               Now for some background
             </p>
 
@@ -99,8 +118,55 @@ export default function description() {
             </div>
           </div>
 
-          <div className="w-7xl text-center text-xl">
-            <p>When Bombardier</p>
+          <div className="space-y-6 w-7xl text-md">
+            <p>
+              The Airbus A220 began life as the Bombardier CSeries, a bold
+              Canadian effort to design a brand-new jet optimized for the
+              100–150 seat market, a size category dominated for decades by
+              older, less-efficient aircraft. Development formally launched in
+              2008, with Bombardier aiming to combine modern aerodynamics,
+              advanced lightweight materials, and new-generation Pratt & Whitney
+              geared-turbofan (GTF) engines to deliver major fuel-burn and
+              noise-reduction benefits.
+            </p>
+
+            <p>
+              Despite strong interest from airlines, the program faced financial
+              pressure and technical challenges through testing and
+              certification. Still, the aircraft delivered on its promise: the
+              CS100 <strong className="text-red-500">(now A220-100)</strong>{" "}
+              entered commercial service with SWISS International Air Lines in
+              2016, followed by the CS300 (now A220-300) in 2017 with airBaltic.
+              Airlines praised the CSeries for its quiet cabin, excellent range,
+              and impressive operating economics — especially on routes too thin
+              for larger jets.
+            </p>
+
+            <p>
+              Recognizing the aircraft&apos;s potential, Airbus acquired a
+              majority stake in the program in 2018, moving final branding and
+              marketing under the Airbus umbrella. The CSeries was officially
+              renamed the A220 in July 2018. With Airbus&apos; global support
+              network, the program gained momentum, new customers, and
+              additional production capacity — including a second assembly line
+              in Mobile, Alabama for U.S. operators.
+            </p>
+
+            <p>
+              Today, the A220-100 and A220-300 are known for combining the
+              comfort of a larger jet with the efficiency of a smaller one.
+              Features such as large windows, wider economy-class seats in a 2-3
+              layout, low cabin noise, and long-range capability have made the
+              A220 a favorite for both airlines and passengers. The aircraft
+              continues to grow its global footprint, flying everything from
+              short-haul regional routes to transcontinental missions.
+            </p>
+
+            <p>
+              What began as an ambitious Canadian innovation has become one of
+              the most modern and versatile single-aisle aircraft in the world,
+              and a key part of the Airbus family.
+            </p>
           </div>
         </motion.div>
 
